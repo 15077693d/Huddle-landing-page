@@ -1,0 +1,156 @@
+/* media -> desktop
+base -> mobile */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Common component */
+
+body{
+    text-align: center;
+    font-size: 15px;
+    background-image:url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    color: #ffffff;
+
+}
+
+h1{
+    line-height:40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+p{
+    line-height:22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 90%;
+}
+
+button{
+    outline: none;
+    width:60%;
+    padding: 10px;
+    color: hsl(257, 40%, 49%);
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    margin-bottom: 50px;
+}
+
+button:active{
+    border: 1px solid #ffffff;
+}
+
+i{  
+    border: solid 1px;
+    border-radius: 50px;
+    margin-left: 10px;
+
+}
+
+/* header */
+header{
+    text-align: left;
+    height: 20vh;
+}
+header img{
+    margin-top: 35px;
+    margin-left:35px ;
+    width: 30%;
+}
+
+/* section */
+section{
+    height: 80vh;
+}
+/* part1 */
+
+#part1 img{
+    width: 80%;
+}
+
+/* part 2 */
+
+#part2{
+    margin: 0px 10%;
+    width: 80%;
+}
+
+.fa-facebook-f{
+    padding: 0.25em 0.4em 
+}
+
+.fa-twitter{
+    padding: 0.25em 0.25em 
+}
+
+.fa-instagram{
+    padding: 0.25em 0.3em 
+}
+
+@media(min-width:300px){
+    body{
+        background-image:url("./images/bg-desktop.svg");
+    }
+}
+
+
+@media(min-width:1000px){
+
+    body{
+        text-align: left;
+        font-size: 20px;
+        background-image:url("./images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        color: #ffffff;
+    }
+
+    h1{
+        line-height: 50px;
+        font-size: 180%;
+    }
+
+    p{
+        line-height: 24px;
+    }
+
+    i{
+        padding: 10px;
+    }
+    header{
+        height: 25vh;
+    }
+    header img{
+        width: 250px;
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+
+    #part1{
+        width:50%;
+        display: inline-block;
+    }
+
+    #part1 img{
+        margin-left: 70px;
+        width: 100%;
+    }
+    #part2{
+        /* margin-top: 80px; */
+        margin-right: 90px;
+        width: 30%;
+        float: right;
+    }
+    #icon-group{
+        float: right;
+    }
+}
